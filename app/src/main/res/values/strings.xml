@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">TP_app</string>
+    <string name="enregistrer">enregistrer</string>
+    <string name="nom">Nom :</string>
+    <string name="prenon">Prenon</string>
+    <string name="contrast">Contrast</string>
+    <string name="paragraque">Paragraque</string>
+</resources>

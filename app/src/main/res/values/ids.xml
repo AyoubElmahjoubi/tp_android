@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="idtxt" type="id" />
+    <item name="button" type="id" />
+    <item name="imgprofile" type="id" />
+    <item name="idtxt2" type="id" />
+    <item name="idtxt3" type="id" />
+    <item name="idtxt4" type="id" />
+    <item name="ideditxt" type="id" />
+    <item name="editNom" type="id" />
+    <item name="editPrenom" type="id" />
+    <item name="editContact" type="id" />
+    <item name="editParagraph" type="id" />
+</resources>
