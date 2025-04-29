@@ -5,4 +5,13 @@
     <string name="prenon">Prenon</string>
     <string name="contrast">Contrast</string>
     <string name="paragraque">Paragraque</string>
+    <string name="NomLandscape">Nom</string>
+    <string name="entrez_votre_contact">Entrez votre contact</string>
+    <string name="entrez_votre_paragraphe_ici">Entrez votre paragraphe ici...</string>
+    <string name="paragraphe">Paragraphe</string>
+    <string name="contact">contact</string>
+    <string name="entrer_votre_prenom">entrer votre prenom</string>
+    <string name="prenom">prenom</string>
+    <string name="entrez_votre_nom">Entrez votre nom</string>
+    <string name="_nom">Nom</string>
 </resources>

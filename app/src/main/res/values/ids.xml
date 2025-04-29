@@ -11,4 +11,38 @@
     <item name="editPrenom" type="id" />
     <item name="editContact" type="id" />
     <item name="editParagraph" type="id" />
+    <item name="container_image_form" type="id" />
+    <item name="guideline_vertical" type="id" />
+    <item name="left_column" type="id" />
+    <item name="imgprofile_land" type="id" />
+    <item name="labelNom" type="id" />
+    <item name="labelPrenom" type="id" />
+    <item name="labelContact" type="id" />
+    <item name="right_column" type="id" />
+    <item name="labelPara" type="id" />
+    <item name="labelGrades" type="id" />
+    <item name="gradesListView" type="id" />
+    <item name="button_land" type="id" />
+    <item name="main_land" type="id" />
+    <item name="matiereTextView" type="id" />
+    <item name="noteTextView" type="id" />
+    <item name="gradeIconImageView" type="id" />
+    <item name="enregistrer_button" type="id" />
+    <item name="description" type="id" />
+    <item name="label_remarques" type="id" />
+    <item name="classe_input" type="id" />
+    <item name="label_classe" type="id" />
+    <item name="prenom_input" type="id" />
+    <item name="label_prenom" type="id" />
+    <item name="nom_input" type="id" />
+    <item name="label_nom" type="id" />
+    <item name="profile_image" type="id" />
+    <item name="note_icon" type="id" />
+    <item name="note_label" type="id" />
+    <item name="note_score" type="id" />
+    <item name="label_notes" type="id" />
+    <item name="notes_list" type="id" />
+    <item name="profile_container" type="id" />
+    <item name="imageProfile" type="id" />
+    <item name="btn_call" type="id" />
 </resources>

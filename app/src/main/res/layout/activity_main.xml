@@ -5,126 +5,157 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    android:background="@drawable/background"
+    tools:context=".Acceuil">
+<!--    tools:ignore="ExtraText">-->
 
+    <FrameLayout
+        android:id="@+id/profile_container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp">
+
+        <ImageView
+            android:id="@+id/imageProfile"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@mipmap/ic_launcher_round" />
+
+        <ImageButton
+            android:id="@+id/btn_call"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="bottom|end"
+            android:background="@drawable/circle_background"
+            android:src="@android:drawable/ic_menu_call"
+            android:contentDescription="Call student" />
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/label_nom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nom :"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/profile_container"
+        android:layout_marginStart="16dp" />
+
+    <EditText
+        android:id="@+id/edit_nom"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Nom"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/profile_container"
+        app:layout_constraintTop_toBottomOf="@id/label_nom"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="4dp" />
+
+    <TextView
+        android:id="@+id/label_prenom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Prénom :"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/edit_nom"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp" />
+
+    <EditText
+        android:id="@+id/edit_prenom"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Prénom"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/imageProfile"
+        app:layout_constraintTop_toBottomOf="@id/label_prenom"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="4dp"
+        tools:ignore="NotSibling" />
+
+    <TextView
+        android:id="@+id/label_classe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Classe :"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/edit_prenom"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp" />
+
+    <EditText
+        android:id="@+id/edit_classe"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Classe"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/imageProfile"
+        app:layout_constraintTop_toBottomOf="@id/label_classe"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="4dp"
+        tools:ignore="NotSibling" />
+
+    <TextView
+        android:id="@+id/label_remarques"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Remarques :"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/edit_classe"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp" />
+
+    <EditText
+        android:id="@+id/description"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:hint="Entrez vos remarques ici..."
+        android:background="@android:color/transparent"
+        android:padding="16dp"
+        android:textSize="16sp"
+        android:gravity="top|start"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/label_remarques"
+        app:layout_constraintBottom_toTopOf="@id/btn_enregistrer"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="16dp" />
 
     <Button
-        android:id="@id/button"
+        android:id="@+id/btn_enregistrer"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/enregistrer"
-        android:textSize="25sp"
+        android:text="ENREGISTRER"
+        android:onClick="OnClickHandler"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
-
-
-    <ImageView
-        android:id="@id/imgprofile"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:src="@mipmap/ic_launcher"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-
-    <TextView
-        android:id="@id/idtxt"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Nom"
-        app:layout_constraintTop_toBottomOf="@id/imgprofile"
-        app:layout_constraintStart_toStartOf="parent"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="20dp" />
-
-    <!-- EditText: Nom -->
-    <EditText
-        android:id="@id/editNom"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:hint="Entrez votre nom"
-        app:layout_constraintStart_toEndOf="@id/idtxt"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="@id/idtxt"
-        android:layout_marginStart="10dp"
-        android:layout_marginEnd="20dp" />
-
-    <!-- Label: Prénom -->
-    <TextView
-        android:id="@id/idtxt2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Prénom"
-        app:layout_constraintTop_toBottomOf="@id/idtxt"
-        app:layout_constraintStart_toStartOf="parent"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="20dp" />
-
-    <!-- EditText: Prénom -->
-    <EditText
-        android:id="@id/editPrenom"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:hint="Entrez votre prénom"
-        app:layout_constraintStart_toEndOf="@id/idtxt2"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="@id/idtxt2"
-        android:layout_marginStart="10dp"
-        android:layout_marginEnd="20dp" />
-
-    <!-- Label: Contact -->
-    <TextView
-        android:id="@id/idtxt3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Contact"
-        app:layout_constraintTop_toBottomOf="@id/idtxt2"
-        app:layout_constraintStart_toStartOf="parent"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="20dp" />
-
-    <!-- EditText: Contact -->
-    <EditText
-        android:id="@id/editContact"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:hint="Entrez votre contact"
-        android:inputType="phone"
-        app:layout_constraintStart_toEndOf="@id/idtxt3"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="@id/idtxt3"
-        android:layout_marginStart="10dp"
-        android:layout_marginEnd="20dp" />
-
-    <!-- Label: Paragraphe -->
-    <TextView
-        android:id="@id/idtxt4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Paragraphe"
-        app:layout_constraintTop_toBottomOf="@id/idtxt3"
-        app:layout_constraintStart_toStartOf="parent"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="30dp" />
-
-    <!-- EditText: Long Paragraph -->
-    <EditText
-        android:id="@id/editParagraph"
-        android:layout_width="0dp"
-        android:layout_height="120dp"
-        android:hint="Entrez votre paragraphe ici..."
-        android:gravity="top|start"
-        android:inputType="textMultiLine"
-        android:minLines="5"
-        android:background="@android:drawable/editbox_background"
-        app:layout_constraintTop_toBottomOf="@id/idtxt4"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginStart="20dp"
-        android:layout_marginEnd="20dp" />
-
-
-
+        android:layout_margin="16dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
